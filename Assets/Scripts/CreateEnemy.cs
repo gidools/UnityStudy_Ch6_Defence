@@ -8,6 +8,8 @@ public class CreateEnemy : MonoBehaviour
     public GameObject prefabEnemy;
     public Vector2 limitMin;
     public Vector2 limitMax;
+    private float delay;
+    private int count;
 
     void Start()
     {
@@ -18,11 +20,15 @@ public class CreateEnemy : MonoBehaviour
     {
         while(true)
         {
+            count++;
+
             float random = UnityEngine.Random.Range(limitMin.y, limitMax.y);
             Vector2 creatingPoint = new Vector2(limitMin.x, random);
 
             Instantiate(prefabEnemy, creatingPoint, Quaternion.identity);
-            yield return new WaitForSeconds(0.5f);
+
+            delay = 10.0f / (count + 4);
+            yield return new WaitForSeconds(delay);
         }
     }
 
