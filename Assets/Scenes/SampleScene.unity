@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -642,6 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860248832}
   - component: {fileID: 860248831}
+  - component: {fileID: 860248833}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -678,6 +679,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &860248833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860248830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92478ec77e410f74986b376c069f245d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034498613
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +785,7 @@ GameObject:
   - component: {fileID: 1188791412}
   - component: {fileID: 1188791411}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HpGuage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -792,11 +805,11 @@ RectTransform:
   m_Father: {fileID: 87885720}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -755.8979, y: 623}
-  m_SizeDelta: {x: 508.2042, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -47}
+  m_SizeDelta: {x: 508.20422, y: 100}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1188791411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,6 +1100,7 @@ GameObject:
   - component: {fileID: 1773197365}
   - component: {fileID: 1773197368}
   - component: {fileID: 1773197367}
+  - component: {fileID: 1773197369}
   m_Layer: 0
   m_Name: Castle
   m_TagString: Untagged
@@ -1206,6 +1220,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.6, y: 11.2}
   m_EdgeRadius: 0
+--- !u!114 &1773197369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773197364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7284578370c2b344e92452e580d42a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2039826747
 GameObject:
   m_ObjectHideFlags: 0
