@@ -3,3 +3,6 @@ Library/
 Temp/
 Logs/
 UnityStudy_Ch6_Defence.sln
+obj/
+.vs/
+Assembly-CSharp.csproj
